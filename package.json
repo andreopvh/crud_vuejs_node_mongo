@@ -1,7 +1,7 @@
 {
   "name": "vuejs-crud",
   "version": "1.0.0",
-  "description": "Crud de usuarios",
+  "description": "Crud de clientes",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server/server.js"
