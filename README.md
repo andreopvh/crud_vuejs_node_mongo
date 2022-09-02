@@ -54,9 +54,9 @@ O front-end, nosso "client", foi desenvolvido totalmente com Vue.js - framework 
 Essa aplicação Vue, é composta por 4 componentes:
 
 - `<Header />`: Cabeçalho com título e "painel de navegação" da aplicação;
-- `<UserRegisterForm />`: Modal com o formulário para cadastro de um novo usuário;
-- `<UserEditForm />`: Modal com o formulário para editar e enviar as alterações do usuário;
-- `<UsersTable />`: Tabela com toda a listagem dos usuários cadastrados no sistema.
+- `<ClientRegisterForm />`: Modal com o formulário para cadastro de um novo cliente;
+- `<ClientEditForm />`: Modal com o formulário para editar e enviar as alterações do cliente;
+- `<ClientTable />`: Tabela com toda a listagem dos clientes cadastrados no sistema.
 
 Esses componentes são todos renderizados no `App.vue`.
 
