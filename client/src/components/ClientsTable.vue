@@ -17,7 +17,7 @@
       <tbody>
         <!-- Diretiva "v-for" para pegar os clientes da API -->
       
-        <tr v-for="(client, index) in clients.clients" :key="client._id" class="m-5">
+        <tr v-for="(client, index) in clients" :key="client._id" class="m-5">
           <th scope="row">{{ index + 1 }}</th>
           <td>{{ client._id }}</td>
           <td>{{ client.cpf }}</td>
@@ -51,16 +51,12 @@ export default {
     }
   },
   // Ao criar o componente, é feito uma requisição GET para a API do backend
-  async created() {
-    await fetch('http://localhost:3000/api/clients/')
-    .then(response => response.json())
-    .then(data => {
-      this.clients = data;
-      console.log('caiu aqui');
-    })
-    .catch(err => {
-      console.error(err);
-    });
+  async mounted() {
+    const response = await fetch('http://localhost:3000/api/clients/')
+    console.log(response)
+    const { client } = await response.json()
+    this.clients = client
+    console.log(this.clients)
   },
   methods: {
     // Requisição DELETE para excluir o cliente
