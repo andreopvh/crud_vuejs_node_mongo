@@ -2,7 +2,8 @@
 const mongodb = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
-mongodb.connect('mongodb://localhost/vuejs-crud', {
+const url = process.env.MONGOLAB_URI ? process.env.MONGOLAB_URI : 'mongodb://localhost/vuejs-crud' 
+mongodb.connect( url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(conn => {
