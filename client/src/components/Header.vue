@@ -6,7 +6,7 @@
     
     <nav class="mt-4 mb-3">
       <a href="/" class="btn btn-outline-primary mr-1">Home</a>
-      <a href="http://localhost:3000/api/clients" class="btn btn-primary mr-1">Server API</a>
+      <a href="http://backendcrud.netlify.app/api/clients" class="btn btn-primary mr-1">Server API</a>
     </nav>
   </div>
 </template>

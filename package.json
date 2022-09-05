@@ -4,7 +4,7 @@
   "description": "Crud de clientes",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/server.js"
+    "start": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",

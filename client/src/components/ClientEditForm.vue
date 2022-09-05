@@ -50,7 +50,7 @@ export default {
   methods: {
     // Requisição PUT para atualizar informações do usuário
     async updateClient(id) {
-      await fetch(`http://localhost:3000/api/clients/edit/${id}`, {
+      await fetch(`http://backendcrud.netlify.app/api/clients/edit/${id}`, {
         method: 'PUT',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({ 

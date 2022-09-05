@@ -52,7 +52,7 @@ export default {
   },
   // Ao criar o componente, é feito uma requisição GET para a API do backend
   async mounted() {
-    const response = await fetch('http://localhost:3000/api/clients/')
+    const response = await fetch('http://backendcrud.netlify.app/api/clients/')
     console.log(response)
     const { client } = await response.json()
     this.clients = client
@@ -61,7 +61,7 @@ export default {
   methods: {
     // Requisição DELETE para excluir o cliente
     async deleteClient(id) {
-      await fetch(`http://localhost:3000/api/clients/delete/${id}`, {
+      await fetch(`http://backendcrud.netlify.app/api/clients/delete/${id}`, {
         method: 'DELETE'
       })
       .then((response) => response.json())

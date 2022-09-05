@@ -50,7 +50,7 @@ export default {
   methods: {
     // Requisição POST para criar um novo cliente
     async createClient() {
-      await fetch('http://localhost:3000/api/clients/', {
+      await fetch('http://backendcrud.netlify.app/api/clients/', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
