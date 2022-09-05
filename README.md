@@ -45,7 +45,7 @@ Nesse projeto, é realiza a divisão entre o front-end e back-end, de modo que a
 
 ### API REST
 
-No back-end, é onde temos a nossa API e banco de dados, desenvolvidos em Node.js e MongoDB, rodando na porta 3000. Todas as rotas de *GET*, *POST*, *PUT* e *DELETE* podem ser localizadas no diretório `server>routes>api>users.js`, elas correspondem à rota http `/api/users` da aplicação (http://localhost:3000/api/client). A conexão com o banco de dados é feita no diretório `server>database>db.js`, nesse arquivo também temos as funções do CRUD sendo exportadas para serem usadas nas rotas da API.
+No back-end, é onde temos a nossa API e banco de dados, desenvolvidos em Node.js e MongoDB, rodando na porta 3000. Todas as rotas de *GET*, *POST*, *PUT* e *DELETE* podem ser localizadas no diretório `server>routes>api>clients.js`, elas correspondem à rota http `/api/clients` da aplicação (http://localhost:3000/api/clients). A conexão com o banco de dados é feita no diretório `server>database>db.js`, nesse arquivo também temos as funções do CRUD sendo exportadas para serem usadas nas rotas da API.
 
 ### Front-end
 
