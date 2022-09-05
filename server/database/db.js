@@ -2,7 +2,7 @@
 const mongodb = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
-const url = process.env.MONGOLAB_URI ? process.env.MONGOLAB_URI : 'mongodb://localhost/vuejs-crud' 
+const url = process.env.MONGOLAB_URI ? process.env.MONGOLAB_URI : 'mongodb+srv://andreovps:andreovps@cluster0.w3hwos5.mongodb.net/test' 
 mongodb.connect( url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
